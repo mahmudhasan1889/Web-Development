@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,16200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: roboto;
+  font-weight: bold;
+  border: 1px solid black;
+  /* text-align: center; */
+}
+
+body {
+  padding: 0;
+}
+
+.container {
+  background-color: violet;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+
+  display: grid;
+  grid-template-areas: 
+    'header'
+    'main'
+    'main'
+    'main'
+    'footer'
+  ;
+}
+
+.sec1{grid-area: s1;}
+.sec2{grid-area: s2;}
+.sec3{grid-area: s3;}
+
+.aside1{grid-area: a1;}
+.aside2{grid-area: a2;}
+
+.nav1{grid-area: n1;}
+.nav2{grid-area: n2;}
+
+header {
+  grid-area: header;
+  background-color: burlywood;
+  margin-bottom: 10px;
+}
+
+header > nav {
+  padding: 10px;
+}
+
+main {
+  grid-area: main;
+  background-color: darksalmon;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+article {
+  grid-area: article;
+
+  display: grid;
+  grid-template-areas: 
+    's1 a1'
+    's2 a2'
+    's3 .'
+  ;
+  
+  padding: 0;
+}
+
+section {
+  grid-area: section;
+  background-color: springgreen;
+  padding: 10px;
+}
+
+aside {
+  grid-area: aside;
+  background-color: red;
+  padding: 10px;
+}
+
+footer {
+  grid-area: footer;
+  background-color: rosybrown;
+
+  display: grid;
+  grid-template-areas: 
+    'n1 n2'
+  ;
+
+  padding: 0;
+}
+
+.nav1, .nav2 {
+  padding: 10px;
+}
+

@@ -1,0 +1,9 @@
+article {
+    grid-template-areas: 
+        's1'
+        's2'
+        's3'
+        'a1'
+        'a2'
+    ;
+}
